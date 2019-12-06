@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">智能管家</string>
+    <string name="app_name">他该叫什么呢</string>
     <string name="text_setting">设置</string>
     <string name="text_login">登录</string>
     <string name="text_registered">注册</string>
@@ -27,7 +27,7 @@
     <string name="text_registered_failure">注册失败：</string>
     <string name="text_two_input_not_consistent">两次输入的密码不一致</string>
     <string name="text_version">版本号:</string>
-    <string name="text_website_address">官网:www.imooc.com</string>
+    <string name="text_website_address">官网</string>
     <string name="text_email_send_ok">邮箱已经发送至：</string>
     <string name="text_email_send_no">邮箱发送失败</string>
     <string name="reset_successfully">重置密码成功</string>
@@ -64,7 +64,7 @@
     <string name="text_setting_content_4">扫描二维码或者条形码</string>
     <string name="text_setting_content_5">把自己分享给朋友吧</string>
     <string name="text_setting_content_6">时刻掌握自身位置</string>
-    <string name="text_setting_content_7">www.imooc.com</string>
+    <string name="text_setting_content_7">https://github.com/hong-ke/the-think</string>
     <string name="text_now_login">正在登陆...</string>
 
 </resources>

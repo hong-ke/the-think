@@ -148,9 +148,6 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
 //                Intent openCameraIntent = new Intent(this, CaptureActivity.class);
 //                startActivityForResult(openCameraIntent, 0);
                 break;
-            case R.id.ll_qr_code:
-                startActivity(new Intent(this, QrCodeActivity.class));
-                break;
             case R.id.ll_my_location:
                 //startActivity(new Intent(this,LocationActivity.class));
                 break;

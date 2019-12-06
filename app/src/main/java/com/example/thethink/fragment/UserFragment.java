@@ -26,7 +26,6 @@ import com.example.thethink.R;
 import com.example.thethink.entity.MyUser;
 import com.example.thethink.ui.CourierActivity;
 import com.example.thethink.ui.LoginActivity;
-import com.example.thethink.ui.PhoneActivity;
 import com.example.thethink.utils.L;
 import com.example.thethink.utils.UtilTools;
 import com.example.thethink.view.CustomDialog;
@@ -198,9 +197,6 @@ public class UserFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.tv_courier:
                 startActivity(new Intent(getActivity(), CourierActivity.class));
-                break;
-            case R.id.tv_phone:
-                startActivity(new Intent(getActivity(), PhoneActivity.class));
                 break;
         }
     }

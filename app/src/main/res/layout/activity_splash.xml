@@ -19,7 +19,7 @@
         android:layout_marginBottom="15dp"
         android:layout_alignParentBottom="true"
         android:gravity="center"
-        android:text="慕课网课程:智能管家"
+        android:text="Android控件应用技术"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

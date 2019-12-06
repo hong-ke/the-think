@@ -57,7 +57,7 @@ public class SplashActivity extends AppCompatActivity {
         //延时2000ms
         handler.sendEmptyMessageDelayed(StaticClass.HANDLER_SPLASH, 2000);
 
-        tv_splash = (TextView) findViewById(R.id.tv_splash);
+        tv_splash = findViewById(R.id.tv_splash);
         //设置字体
         UtilTools.setFont(this,tv_splash);
     }

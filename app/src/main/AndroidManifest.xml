@@ -66,17 +66,16 @@
         <activity
             android:name=".ui.CourierActivity"
             android:label="@string/text_express_query" /> <!-- 归属地查询 -->
-        <activity
-            android:name=".ui.PhoneActivity"
-            android:label="@string/text_belonging_query" /> <!-- 下载 -->
+        <!-- 下载 -->
         <!-- 二维码 -->
-        <activity
-            android:name=".ui.QrCodeActivity"
-            android:label="@string/text_my_qrcode" /> <!-- 我的位置 -->
+        <!-- 我的位置 -->
         <!-- 关于软件 -->
         <activity
             android:name=".ui.AboutActivity"
             android:label="@string/text_about_app" /> <!-- 新闻详情 -->
+        <activity
+            android:name=".ui.WebsiteActivity"
+            android:label="官网" /> <!-- 官网 -->
         <activity android:name=".ui.WebViewActivity" /> <!-- 短信服务 -->
         <service android:name=".service.SmsService" />
 
