@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.thethink">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" /> <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--拍照-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--写入SD卡的权限：如果你希望保存相机拍照后的照片-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--读取SD卡的权限:打开相册选取图片所必须的权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--窗口权限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+
+
+    <application
+        android:name=".application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".test.Main2Activity" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:theme="@style/NoActivityFullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 设置 -->
+        <activity
+            android:name=".ui.SettingActivity"
+            android:label="@string/text_setting" /> <!-- 主页 -->
+        <activity android:name=".MainActivity" /> <!-- 引導頁 -->
+        <activity
+            android:name=".ui.GuideActivity"
+            android:theme="@style/NoActivityFullscreen" /> <!-- 登录 -->
+        <activity
+            android:name=".ui.LoginActivity"
+            android:label="@string/text_login" /> <!-- 注册 -->
+        <activity
+            android:name=".ui.RegisteredActivity"
+            android:label="@string/text_registered" /> <!-- 忘记密码 -->
+        <activity
+            android:name=".ui.ForgetPasswordActivity"
+            android:label="@string/text_forget_password" /> <!-- 快递查询 -->
+        <activity
+            android:name=".ui.CourierActivity"
+            android:label="@string/text_express_query" /> <!-- 归属地查询 -->
+        <activity
+            android:name=".ui.PhoneActivity"
+            android:label="@string/text_belonging_query" /> <!-- 下载 -->
+        <!-- 二维码 -->
+        <activity
+            android:name=".ui.QrCodeActivity"
+            android:label="@string/text_my_qrcode" /> <!-- 我的位置 -->
+        <!-- 关于软件 -->
+        <activity
+            android:name=".ui.AboutActivity"
+            android:label="@string/text_about_app" /> <!-- 新闻详情 -->
+        <activity android:name=".ui.WebViewActivity" /> <!-- 短信服务 -->
+        <service android:name=".service.SmsService" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="KIXaj3dCXGF2FsBGGyDoOl1vEMNeq8Wn" />
+
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.example.thethink.BmobContentProvider">
+        </provider>
+    </application>
+
+</manifest>
