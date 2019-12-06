@@ -11,7 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -20,10 +19,9 @@ import androidx.fragment.app.Fragment;
 
 import com.example.thethink.R;
 import com.example.thethink.adapter.GridAdapter;
-import com.example.thethink.entity.GirlData;
+import com.example.thethink.entity.AndroidData;
 import com.example.thethink.ui.WebViewActivity;
 import com.example.thethink.utils.L;
-import com.example.thethink.utils.PicassoUtils;
 import com.example.thethink.view.CustomDialog;
 import com.github.chrisbanes.photoview.PhotoViewAttacher;
 import com.kymjs.rxvolley.RxVolley;
@@ -31,18 +29,17 @@ import com.kymjs.rxvolley.client.HttpCallback;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
+
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class GirlFragment extends Fragment {
+public class AndroidFragment extends Fragment {
 
     //列表
     private ListView mListView;
     //数据
-    private List<GirlData> mList = new ArrayList<>();
+    private List<AndroidData> mList = new ArrayList<>();
     //适配器
     private GridAdapter mAdapter;
     //提示框
@@ -65,7 +62,7 @@ public class GirlFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_girl, null);
+        View view = inflater.inflate(R.layout.fragment_android, null);
         findView(view);
         return view;
     }
@@ -116,7 +113,7 @@ public class GirlFragment extends Fragment {
                 String url = json.getString("url");
                 mListUrl.add(url);
                 mListTitle.add(desc);
-                GirlData data = new GirlData();
+                AndroidData data = new AndroidData();
                 data.setDesc(desc);
                 data.setWho(who);
                 data.setUrl(url);

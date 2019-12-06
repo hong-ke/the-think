@@ -4,7 +4,7 @@ package com.example.thethink.entity;
  *  描述：    妹子的实体类
  */
 
-public class GirlData {
+public class AndroidData {
 
     //标题
     private String desc;

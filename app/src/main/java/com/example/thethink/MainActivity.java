@@ -14,7 +14,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import com.example.thethink.fragment.ButlerFragment;
-import com.example.thethink.fragment.GirlFragment;
+import com.example.thethink.fragment.AndroidFragment;
 import com.example.thethink.fragment.UserFragment;
 import com.example.thethink.fragment.WechatFragment;
 import com.example.thethink.ui.SettingActivity;
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mFragment = new ArrayList<>();
         mFragment.add(new ButlerFragment());
         mFragment.add(new WechatFragment());
-        mFragment.add(new GirlFragment());
+        mFragment.add(new AndroidFragment());
         mFragment.add(new UserFragment());
     }
 

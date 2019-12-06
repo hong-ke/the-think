@@ -10,26 +10,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.thethink.R;
-import com.example.thethink.entity.GirlData;
-import com.example.thethink.utils.PicassoUtils;
+import com.example.thethink.entity.AndroidData;
 
 import java.util.List;
 
 public class GridAdapter extends BaseAdapter {
 
     private Context mContext;
-    private List<GirlData> mList;
+    private List<AndroidData> mList;
     private LayoutInflater inflater;
-    private GirlData data;
+    private AndroidData data;
     private WindowManager wm;
     //屏幕宽
     private int width;
 
-    public GridAdapter(Context mContext, List<GirlData> mList) {
+    public GridAdapter(Context mContext, List<AndroidData> mList) {
         this.mContext = mContext;
         this.mList = mList;
         inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -57,7 +55,7 @@ public class GridAdapter extends BaseAdapter {
         ViewHolder viewHolder = null;
         if(convertView == null){
             viewHolder = new ViewHolder();
-            convertView = inflater.inflate(R.layout.girl_item,null);
+            convertView = inflater.inflate(R.layout.androidl_item,null);
             viewHolder.tv_title = convertView.findViewById(R.id.tv_title);
             viewHolder.tv_source = convertView.findViewById(R.id.tv_source);
             convertView.setTag(viewHolder);
