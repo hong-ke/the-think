@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         //去掉阴影
-        getSupportActionBar().setElevation(0);
+        getSupportActionBar().hide();
 
         //判断程序是否是第一次运行
         if (isFirst()) {
